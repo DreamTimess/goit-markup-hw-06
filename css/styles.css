@@ -280,8 +280,95 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.modal-second-div {
+    padding:40px 39px 40px 41px;
+
+}
+
+.modal-div-form {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.form-modal {
+    width: 448px;
+    height: 40px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+
+/* .form-modal:focus,
+.form-modal:active {
+    outline: 1px var(--color-hover) solid;
+    fill: var(--color-hover);
+} */
+
+.modal-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-coment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    width: 448px;
+    height: 120px;
+    resize: none;
+}
+
+.form-modal-label{
+    position: absolute;
+    top: 15%;
+    left: 16px;
+    transform: translateY(-50%);
+}
+
+.svg-icon-modal {
+    position: absolute;
+    top:50%;
+    left:12px;
+    transform: translateY(-50%);
+}
+
+.form-modal:focus,
+.form-modal-coment:focus {
+    border: 1px solid var(--color-hover);
+}
+
+.form-modal:focus + .svg-icon-modal {
+ fill:var(--color-hover)
+}
+
 .icon-X {
     fill: currentColor;
+}
+
+.button-close:hover .icon-X,
+.button-close:active .icon-X {
+    fill: var(--color-hover);
+}
+
+.modal-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background: var(--color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 @keyframes scale {
@@ -570,6 +657,10 @@ body {
     margin-right: 70px;
 }
 
+.footer-second-div {
+    margin-right:93px;
+}
+
 .header-logo-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -644,6 +735,56 @@ body {
 .icon-footer-social {
     fill: var(--white-text-color);
 }
+
+.div-form {
+    display: flex;
+    position: relative;
+}
+
+
+
+.form-bc-mail {
+    margin-right:12px;
+    width: 358px;
+    height: 50px;
+    color: var(--white-text-color);
+    padding: 16px 15px;
+    background-color: var(--basic-footer-background-color);
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.button-footer:hover,
+.button-footer:active {
+    background-color: #188CE8;
+}
+
+.button-footer {
+    display: flex;
+    width: 200px;
+    cursor: pointer;
+    background: var(--color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    padding: 10px 32px;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-left: 12px;
+}
+
+.icon-footer-send {
+    margin-left: 10px;
+}
+
 /* portfolio */
 
 .main-work-portfolio {
