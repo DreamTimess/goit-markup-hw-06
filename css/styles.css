@@ -278,6 +278,7 @@ body {
     background-color: inherit;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-second-div {
@@ -297,6 +298,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .form-modal:focus,
@@ -321,6 +323,7 @@ body {
     width: 448px;
     height: 120px;
     resize: none;
+    padding: 12px 16px;
 }
 
 .form-modal-label{
@@ -335,10 +338,12 @@ body {
     top:50%;
     left:12px;
     transform: translateY(-50%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-modal:focus,
-.form-modal-coment:focus {
+.form-modal-coment:focus,
+.form-coment:focus {
     border: 1px solid var(--color-hover);
 }
 
@@ -356,19 +361,73 @@ body {
 }
 
 .modal-button {
-    font-family: 'Roboto';
-    font-style: normal;
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-text-color);
     background: var(--color-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.modal-div-area {
+    margin-bottom: 20px;
+}
+
+
+
+.policy {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.71px;
+    color: var(--second-text-color);
+    margin-bottom: 30px;
+}
+
+.policy-input {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.link-policy {
+    color: var(--color-hover);
+}
+
+.new-chek {
+    display: flex;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-right: 7px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.policy-input:checked~label .new-chek {
+    background-color: #2196f3;
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196f3;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes scale {
@@ -387,7 +446,9 @@ body {
 }
 
 .main-order-button:hover,
-.main-order-button:active {
+.main-order-button:active,
+.modal-button:hover,
+.modal-button:active {
     background-color: #188CE8;
 } 
 
