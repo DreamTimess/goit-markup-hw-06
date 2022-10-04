@@ -982,7 +982,8 @@ body {
 }
 
 .link-work:hover .overlay,
-.link-work:active .overlay {
+.link-work:active .overlay,
+.link-work:focus .overlay{
     transform: translateY(-100%);
     transition: linear 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
